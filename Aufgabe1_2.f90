@@ -6,7 +6,7 @@ program Aufgabe1_2
   read(*,*) x
   pi = 4.*atan(1.)
   teilProd = dble(1+(x**2/(pi)**2))
-  do k=2,15002,100
+  do k=2,15002,1
 	teilProd = teilProd * dble(1+(x**2/(k*pi)**2))
     sinhDarstellung = sinh(x)
     write(*,*) 'Darstellung mittels sinh ergibt ',sinhDarstellung
