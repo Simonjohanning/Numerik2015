@@ -30,7 +30,7 @@ program Aufgabe2_8
 	k = k+1
   end do
   write(*,*) 'Programm hat nach ',k,' Iterationsschritten mit dem Ergebnis ',partialsum,' terminiert.'
-  write(*,*) 'Eingebaute e-Funktion liefert ',exp(1.)
+  write(*,*) 'Eingebaute e-Funktion liefert ',exp(x)
 
 
   write(*,*) 'Verhalten mittels unserer Lösung:'
@@ -44,7 +44,7 @@ program Aufgabe2_8
   do while(result_change)
 	partialsum_previous = partialsum
 	partialsum = partialsum_previous + (summand_previous * (x / dble(k)))
-	write(*,*) 'Partialsumme ',partialsum_previous,' + ',(x_pow / dble(k_factorial)),' ergibt neue Partialsumme ',partialsum
+	write(*,*) 'Partialsumme ',partialsum_previous,' + ',(summand_previous * (x / dble(k))),' ergibt neue Partialsumme ',partialsum
 !	write(*,*) 'partialsum = ',partialsum,' partialsum_previous = ',partialsum_previous
 !	write(*,*) 'partialsum == partialsum_previous = ',partialsum == partialsum_previous
 	result_change = .NOT.(partialsum == partialsum_previous)	
@@ -52,6 +52,6 @@ program Aufgabe2_8
 	k = k+1
   end do
   write(*,*) 'Programm hat nach ',k,' Iterationsschritten mit dem Ergebnis ',partialsum,' terminiert.'
-  write(*,*) 'Eingebaute e-Funktion liefert ',exp(1.)
+  write(*,*) 'Eingebaute e-Funktion liefert ',exp(x)
 
 end program Aufgabe2_8
