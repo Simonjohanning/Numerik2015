@@ -3,7 +3,7 @@ program Aufgabe2_8
   !variable declaration
   integer :: x
   write(*,*) '------------------'
-  write(*,*) 'Verhalten mittels unserer Lösung:'
+  write(*,*) 'Verhalten mittels verbesserter Lösung:'
   write(*,*) '------------------'
   do x=1,19,2
 	  call poor(dble(x))
