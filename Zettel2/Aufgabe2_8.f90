@@ -36,8 +36,9 @@ subroutine improved(x)
 	k = k+1
   end do
   write(*,*) 'Programm hat nach ',k,' Iterationsschritten mit dem Ergebnis ',partialsum,' für x = ',x,'terminiert.'
-  write(*,*) 'Eingebaute e-Funktion liefert ',exp(dble(x))
-!  write(*,'(A,E16.16)') 'Eingebaute e-Funktion liefert ',exp(dble(x))
+!  write(*,*) 'Eingebaute e-Funktion liefert ',exp(dble(x))
+  write(*,'(A)') 'Eingebaute e-Funktion liefert '
+	write(*,'(E12.11)') exp(dble(x))
 	write(*,*) 'Der relative Fehler beträgt:',((partialsum - exp(dble(x)))/exp(dble(x)))
 	write(*,*)
 !10 format (2(A100, E16.15))
