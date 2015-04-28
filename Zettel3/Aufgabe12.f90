@@ -1,8 +1,10 @@
 program Aufgabe12
 implicit none
+	!Variablen instantieren
 	integer :: ziffern(24), i, k, b
 	real :: u, uApprox
 	
+	!Variablen setzen
 	b = 2
 	u = 0.1
 	uApprox = 0.
